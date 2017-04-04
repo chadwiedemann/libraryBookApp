@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		175A3765BE2DFE1C8E1DBEBD /* Pods_ProlificCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEE9B1B2127F80DA0B3AB3 /* Pods_ProlificCodingChallenge.framework */; };
+		D85991F51E7D680900965F70 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85991F41E7D680900965F70 /* DAO.swift */; };
+		D8607ACB1E809414000BB851 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = D8607ACA1E809414000BB851 /* Book.m */; };
+		D8607ACE1E81980E000BB851 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8607ACD1E81980E000BB851 /* Extensions.swift */; };
+		D8607AD01E819830000BB851 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8607ACF1E819830000BB851 /* AppConstants.swift */; };
+		D8607AD31E81B6DC000BB851 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8607AD11E81B6DC000BB851 /* Model.xcdatamodeld */; };
+		D8CA78821E79BCD200F8CD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA78811E79BCD200F8CD41 /* AppDelegate.swift */; };
+		D8CA78891E79BCD200F8CD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CA78881E79BCD200F8CD41 /* Assets.xcassets */; };
+		D8CA788C1E79BCD200F8CD41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8CA788A1E79BCD200F8CD41 /* LaunchScreen.storyboard */; };
+		D8CA789C1E7B332700F8CD41 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA789A1E7B332700F8CD41 /* OpeningViewController.swift */; };
+		D8CA789D1E7B332700F8CD41 /* OpeningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA789B1E7B332700F8CD41 /* OpeningViewController.xib */; };
+		D8CA78A01E7B3DCD00F8CD41 /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA789E1E7B3DCD00F8CD41 /* AddBookViewController.swift */; };
+		D8CA78A11E7B3DCD00F8CD41 /* AddBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA789F1E7B3DCD00F8CD41 /* AddBookViewController.xib */; };
+		D8CA78A41E7B3E1200F8CD41 /* EditBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA78A21E7B3E1200F8CD41 /* EditBookViewController.swift */; };
+		D8CA78A51E7B3E1200F8CD41 /* EditBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA78A31E7B3E1200F8CD41 /* EditBookViewController.xib */; };
+		D8CA78A81E7B3E3400F8CD41 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA78A61E7B3E3400F8CD41 /* BookDetailViewController.swift */; };
+		D8CA78A91E7B3E3400F8CD41 /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CA78A71E7B3E3400F8CD41 /* BookDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05EEE9B1B2127F80DA0B3AB3 /* Pods_ProlificCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProlificCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F07D4C53E21454AF985377 /* Pods-ProlificCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProlificCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProlificCodingChallenge/Pods-ProlificCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		721ADC2A82643DA854EB5210 /* Pods-ProlificCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProlificCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProlificCodingChallenge/Pods-ProlificCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		D85991F41E7D680900965F70 /* DAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		D8607AC81E809413000BB851 /* ProlificCodingChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProlificCodingChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8607AC91E809414000BB851 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		D8607ACA1E809414000BB851 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		D8607ACD1E81980E000BB851 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D8607ACF1E819830000BB851 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		D8607AD21E81B6DC000BB851 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D8CA787E1E79BCD200F8CD41 /* ProlificCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProlificCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8CA78811E79BCD200F8CD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8CA78881E79BCD200F8CD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8CA788B1E79BCD200F8CD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8CA788D1E79BCD200F8CD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8CA789A1E7B332700F8CD41 /* OpeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		D8CA789B1E7B332700F8CD41 /* OpeningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpeningViewController.xib; sourceTree = "<group>"; };
+		D8CA789E1E7B3DCD00F8CD41 /* AddBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		D8CA789F1E7B3DCD00F8CD41 /* AddBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBookViewController.xib; sourceTree = "<group>"; };
+		D8CA78A21E7B3E1200F8CD41 /* EditBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBookViewController.swift; sourceTree = "<group>"; };
+		D8CA78A31E7B3E1200F8CD41 /* EditBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBookViewController.xib; sourceTree = "<group>"; };
+		D8CA78A61E7B3E3400F8CD41 /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		D8CA78A71E7B3E3400F8CD41 /* BookDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8CA787B1E79BCD200F8CD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175A3765BE2DFE1C8E1DBEBD /* Pods_ProlificCodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C8175BBCCA202677428CEC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05EEE9B1B2127F80DA0B3AB3 /* Pods_ProlificCodingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0EF71D94057D4D3FDC38C07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				721ADC2A82643DA854EB5210 /* Pods-ProlificCodingChallenge.debug.xcconfig */,
+				47F07D4C53E21454AF985377 /* Pods-ProlificCodingChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D84D84E91E82884E0000627C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA789B1E7B332700F8CD41 /* OpeningViewController.xib */,
+				D8CA78A71E7B3E3400F8CD41 /* BookDetailViewController.xib */,
+				D8CA789F1E7B3DCD00F8CD41 /* AddBookViewController.xib */,
+				D8CA78A31E7B3E1200F8CD41 /* EditBookViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D8607ACC1E8196C6000BB851 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D8607ACF1E819830000BB851 /* AppConstants.swift */,
+				D8607ACD1E81980E000BB851 /* Extensions.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D8CA78751E79BCD200F8CD41 = {
+			isa = PBXGroup;
+			children = (
+				D8CA78991E7B2E9000F8CD41 /* Model */,
+				D8CA78971E7B2E6F00F8CD41 /* Controllers */,
+				D84D84E91E82884E0000627C /* Views */,
+				D8607ACC1E8196C6000BB851 /* Utilities */,
+				D8CA78801E79BCD200F8CD41 /* ProlificCodingChallenge */,
+				D8CA787F1E79BCD200F8CD41 /* Products */,
+				D0EF71D94057D4D3FDC38C07 /* Pods */,
+				3C8175BBCCA202677428CEC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8CA787F1E79BCD200F8CD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA787E1E79BCD200F8CD41 /* ProlificCodingChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8CA78801E79BCD200F8CD41 /* ProlificCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA78811E79BCD200F8CD41 /* AppDelegate.swift */,
+				D8CA78881E79BCD200F8CD41 /* Assets.xcassets */,
+				D8CA788A1E79BCD200F8CD41 /* LaunchScreen.storyboard */,
+				D8CA788D1E79BCD200F8CD41 /* Info.plist */,
+			);
+			path = ProlificCodingChallenge;
+			sourceTree = "<group>";
+		};
+		D8CA78971E7B2E6F00F8CD41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA789A1E7B332700F8CD41 /* OpeningViewController.swift */,
+				D8CA78A61E7B3E3400F8CD41 /* BookDetailViewController.swift */,
+				D8CA789E1E7B3DCD00F8CD41 /* AddBookViewController.swift */,
+				D8CA78A21E7B3E1200F8CD41 /* EditBookViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D8CA78991E7B2E9000F8CD41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8607AD11E81B6DC000BB851 /* Model.xcdatamodeld */,
+				D85991F41E7D680900965F70 /* DAO.swift */,
+				D8607AC91E809414000BB851 /* Book.h */,
+				D8607ACA1E809414000BB851 /* Book.m */,
+				D8607AC81E809413000BB851 /* ProlificCodingChallenge-Bridging-Header.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8CA787D1E79BCD200F8CD41 /* ProlificCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8CA78901E79BCD200F8CD41 /* Build configuration list for PBXNativeTarget "ProlificCodingChallenge" */;
+			buildPhases = (
+				B398DDB243B33365FE89E374 /* [CP] Check Pods Manifest.lock */,
+				D8CA787A1E79BCD200F8CD41 /* Sources */,
+				D8CA787B1E79BCD200F8CD41 /* Frameworks */,
+				D8CA787C1E79BCD200F8CD41 /* Resources */,
+				E6DCC671B27024813201C448 /* [CP] Embed Pods Frameworks */,
+				2CBDCF32A9E160C8DBDDB172 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProlificCodingChallenge;
+			productName = ProlificCodingChallenge;
+			productReference = D8CA787E1E79BCD200F8CD41 /* ProlificCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8CA78761E79BCD200F8CD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Chad Wiedemann LLC";
+				TargetAttributes = {
+					D8CA787D1E79BCD200F8CD41 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P44YFW78FY;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8CA78791E79BCD200F8CD41 /* Build configuration list for PBXProject "ProlificCodingChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8CA78751E79BCD200F8CD41;
+			productRefGroup = D8CA787F1E79BCD200F8CD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8CA787D1E79BCD200F8CD41 /* ProlificCodingChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8CA787C1E79BCD200F8CD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8CA789D1E7B332700F8CD41 /* OpeningViewController.xib in Resources */,
+				D8CA78A11E7B3DCD00F8CD41 /* AddBookViewController.xib in Resources */,
+				D8CA78A91E7B3E3400F8CD41 /* BookDetailViewController.xib in Resources */,
+				D8CA788C1E79BCD200F8CD41 /* LaunchScreen.storyboard in Resources */,
+				D8CA78A51E7B3E1200F8CD41 /* EditBookViewController.xib in Resources */,
+				D8CA78891E79BCD200F8CD41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CBDCF32A9E160C8DBDDB172 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProlificCodingChallenge/Pods-ProlificCodingChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B398DDB243B33365FE89E374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6DCC671B27024813201C448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProlificCodingChallenge/Pods-ProlificCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8CA787A1E79BCD200F8CD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85991F51E7D680900965F70 /* DAO.swift in Sources */,
+				D8607ACE1E81980E000BB851 /* Extensions.swift in Sources */,
+				D8607ACB1E809414000BB851 /* Book.m in Sources */,
+				D8CA78821E79BCD200F8CD41 /* AppDelegate.swift in Sources */,
+				D8CA78A01E7B3DCD00F8CD41 /* AddBookViewController.swift in Sources */,
+				D8CA789C1E7B332700F8CD41 /* OpeningViewController.swift in Sources */,
+				D8CA78A41E7B3E1200F8CD41 /* EditBookViewController.swift in Sources */,
+				D8CA78A81E7B3E3400F8CD41 /* BookDetailViewController.swift in Sources */,
+				D8607AD31E81B6DC000BB851 /* Model.xcdatamodeld in Sources */,
+				D8607AD01E819830000BB851 /* AppConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8CA788A1E79BCD200F8CD41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8CA788B1E79BCD200F8CD41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8CA788E1E79BCD200F8CD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8CA788F1E79BCD200F8CD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8CA78911E79BCD200F8CD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721ADC2A82643DA854EB5210 /* Pods-ProlificCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P44YFW78FY;
+				INFOPLIST_FILE = ProlificCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chad-Wiedemann-LLC.ProlificCodingChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProlificCodingChallenge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8CA78921E79BCD200F8CD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F07D4C53E21454AF985377 /* Pods-ProlificCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P44YFW78FY;
+				INFOPLIST_FILE = ProlificCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chad-Wiedemann-LLC.ProlificCodingChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProlificCodingChallenge-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8CA78791E79BCD200F8CD41 /* Build configuration list for PBXProject "ProlificCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8CA788E1E79BCD200F8CD41 /* Debug */,
+				D8CA788F1E79BCD200F8CD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8CA78901E79BCD200F8CD41 /* Build configuration list for PBXNativeTarget "ProlificCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8CA78911E79BCD200F8CD41 /* Debug */,
+				D8CA78921E79BCD200F8CD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8607AD11E81B6DC000BB851 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8607AD21E81B6DC000BB851 /* Model.xcdatamodel */,
+			);
+			currentVersion = D8607AD21E81B6DC000BB851 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8CA78761E79BCD200F8CD41 /* Project object */;
+}

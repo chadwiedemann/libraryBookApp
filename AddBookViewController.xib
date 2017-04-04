@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddBookViewController" customModule="ProlificCodingChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="authorTextField" destination="FIT-hq-Thb" id="HAS-FE-c4G"/>
+                <outlet property="bookTitleTextField" destination="BHG-55-cBO" id="aEJ-vA-i89"/>
+                <outlet property="categoriesTextField" destination="rTo-qY-kGw" id="hpp-ip-eG7"/>
+                <outlet property="publisherTextField" destination="lfa-ET-Fpw" id="NFC-Fw-2pf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Book Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHG-55-cBO">
+                    <rect key="frame" x="15" y="20" width="290" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIT-hq-Thb">
+                    <rect key="frame" x="15" y="70" width="290" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Publisher" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-ET-Fpw">
+                    <rect key="frame" x="15" y="120" width="290" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rTo-qY-kGw">
+                    <rect key="frame" x="15" y="170" width="290" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pC-Eb-ubD">
+                    <rect key="frame" x="15" y="240" width="290" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Submit"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitButtonPressed:" destination="-1" eventType="touchUpInside" id="B2t-Q8-2wv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5pC-Eb-ubD" firstAttribute="top" secondItem="rTo-qY-kGw" secondAttribute="bottom" constant="40" id="5gh-fO-XFk"/>
+                <constraint firstItem="lfa-ET-Fpw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="6yC-sR-n20"/>
+                <constraint firstItem="rTo-qY-kGw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="BMx-dt-KQb"/>
+                <constraint firstAttribute="trailing" secondItem="FIT-hq-Thb" secondAttribute="trailing" constant="15" id="F1L-VX-aMs"/>
+                <constraint firstItem="BHG-55-cBO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="FAt-pz-yBv"/>
+                <constraint firstAttribute="trailing" secondItem="BHG-55-cBO" secondAttribute="trailing" constant="15" id="HeP-q9-7Se"/>
+                <constraint firstAttribute="trailing" secondItem="lfa-ET-Fpw" secondAttribute="trailing" constant="15" id="Tph-gE-OTd"/>
+                <constraint firstItem="FIT-hq-Thb" firstAttribute="top" secondItem="BHG-55-cBO" secondAttribute="bottom" constant="20" id="V31-2D-q5z"/>
+                <constraint firstItem="BHG-55-cBO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="VvR-MH-JKi"/>
+                <constraint firstAttribute="trailing" secondItem="5pC-Eb-ubD" secondAttribute="trailing" constant="15" id="mct-LP-rwF"/>
+                <constraint firstItem="lfa-ET-Fpw" firstAttribute="top" secondItem="FIT-hq-Thb" secondAttribute="bottom" constant="20" id="mhc-2V-r5k"/>
+                <constraint firstItem="5pC-Eb-ubD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="q0U-cu-mVn"/>
+                <constraint firstItem="FIT-hq-Thb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="sh7-JQ-CMi"/>
+                <constraint firstAttribute="trailing" secondItem="rTo-qY-kGw" secondAttribute="trailing" constant="15" id="swF-qe-mfc"/>
+                <constraint firstItem="rTo-qY-kGw" firstAttribute="top" secondItem="lfa-ET-Fpw" secondAttribute="bottom" constant="20" id="zt4-iF-gD6"/>
+            </constraints>
+            <point key="canvasLocation" x="29.5" y="72.5"/>
+        </view>
+    </objects>
+</document>
